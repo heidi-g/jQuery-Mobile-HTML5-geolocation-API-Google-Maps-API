@@ -8,8 +8,8 @@ function getLocation() {
     }
 }
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
 }
 
 $(document).on('click', '#getGeolocation', function(){
@@ -101,7 +101,7 @@ function getDirections() {
 function calcRoute() {
 	console.log("calcRoute");
   start = directionsLatLng;
-  end = "50 Rue Ste-Catherine O Montréal, QC H2X 1Z6";
+  end = "15 Allen St, Te Aro, Wellington 6011";
   var request = {
     origin:start,
     destination:end,
